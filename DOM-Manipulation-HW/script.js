@@ -17,6 +17,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
   // Do all of your work inside the document.addEventListener  
 
   // Part 1
+  //Changing main title to something simpler
   document.querySelector("#main-title").innerHTML = "This is DOM Toretto's homepage";
 
   // Part 2
@@ -27,6 +28,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
   document.querySelector("#favorite-things").lastElementChild.remove();
 
   // Part 4
+  //Changing font size
   let specialTitles = document.querySelectorAll(".special-title");
   for (let title of specialTitles){
     title.style.fontSize = "2rem";
@@ -37,6 +39,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
   document.querySelector("#past-races").children[3].remove();
 
   // Part 6
+  //Creating new city that Dom raced in
   let newRace = document.createElement("li");
   newRace.innerHTML = "The 313 (Detroit, fyi)";
   document.querySelector("#past-races").appendChild(newRace);
@@ -55,6 +58,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
   document.querySelector(".main").appendChild(newDiv);
 
   // Part 8
+  //Calling the random quote funciton
   document.querySelector("#quote-title").addEventListener("click",function(evt){
     randomQuote();
   })
@@ -72,5 +76,4 @@ document.addEventListener("DOMContentLoaded", function(event) {
       post.classList.toggle("purple");
     })
   }
-  
 });
