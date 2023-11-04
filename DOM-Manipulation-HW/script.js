@@ -50,9 +50,9 @@ document.addEventListener("DOMContentLoaded", function(event) {
   newDiv.classList.add("blog-post");
   newDiv.classList.add("purple");
   let newH2 = document.createElement("h1");
-  newH2.innerHTML = "Detroit";
+  newH2.textContent = "Detroit";
   newP = document.createElement("p");
-  newP.innerHTML = "It's called the Motor City for a reason!";
+  newP.textContent = "It's called the Motor City for a reason!";
   newDiv.appendChild(newH2);
   newDiv.appendChild(newP);
   document.querySelector(".main").appendChild(newDiv);
